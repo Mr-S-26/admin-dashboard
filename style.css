@@ -1,1 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #e2e8f0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.5fr 2fr 2fr 1.5fr;
+    grid-template-rows: 1fr 2.5fr 2fr 2.5fr;
+    grid-template-areas: "sidebar header header header"
+                         "sidebar main main right"
+                         "sidebar main main right"
+                         "sidebar main main right";
+}
+
+header {  
+    background-color: white;
+    grid-area: header;
+}
+
+#sidebar {    
+    background-color: #3b82f6;
+    grid-area: sidebar;
+}
+
+main {
+    grid-area: main;
+}
+
+.a , .b , .c , .d , .e , .f  {
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    border: orange solid 10px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.3fr 1.5fr 1.5fr;
+    grid-template-areas: "main-header main-header"
+                         "a b"
+                         "c d"
+                         "e f";
+}
+
+.a {
+    grid-area: a;
+}
+
+.a h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.a p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.b h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.b p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.c h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.c p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.d h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.d p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.e h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.e p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.f h4 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.f p {
+    margin-left: 20px;
+    color: gray;
+    font-size: 12px;
+}
+
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+.f {
+    grid-area: f;
+}
+.main-header {
+    grid-area: main-header;
+}
+.main-header h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.right {
+    grid-area: right;
+}
+
+nav {
+    display: grid;
+}
+
+nav > * {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+h2, h3, h4, p, h5 {
+    font-family: sans-serif;
+}
+
+.announcement {
+    grid-area: announcement;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.trending {
+    grid-area: trending;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 0.25fr 1fr;
+    grid-template-areas:"top"
+                        "announcement"
+                        "footer"
+                        "trending";
+}
+
+.right-container .top {
+    grid-area: top;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.right-container .footer {
+    grid-area: footer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.right-container p {
+    font-size: 12px;
+}
+
+
+
 
